@@ -17,7 +17,6 @@ private:
     };
     Vertex vertices[MAX];
     string path[MAX];
-    int num_vertex;
 public:
     Graph();
     void addVertex(const string& vertex);
@@ -25,4 +24,6 @@ public:
     void addEdge(const string& );
     int dijkstra(const string&, const string&, string[]);
     void print_graph();
+    unsigned int hash(const string&);
+    unsigned int hash2(const string&);
 };
