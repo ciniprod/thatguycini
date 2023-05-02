@@ -2,7 +2,7 @@
 #include <sstream>
 #include <algorithm>
 
-const int MAX = 50;
+const int MAX = 71;
 
 class Graph{
 private:

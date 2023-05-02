@@ -80,7 +80,7 @@ int Graph::dijkstra(const string& start_vertex, const string& end_vertex, string
         while (curr_edge != nullptr) {
             int dest_index = curr_edge->dest_vertex;
             int new_dist = dist[curr_index] + curr_edge->weight;
-            if (!visited[dest_index] && new_dist < dist[dest_index]) {
+            if (new_dist < dist[dest_index]) {
                 dist[dest_index] = new_dist;
                 prev[dest_index] = curr_index;
                 min_heap.push(dest_index);
